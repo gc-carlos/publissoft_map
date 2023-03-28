@@ -1,0 +1,178 @@
+  * { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  html,
+  body {
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    border-radius: 5px;
+    padding: .7em;
+    font-size: .9em;
+    background-color: #007C94;
+    background-image: linear-gradient(90deg,#007CF0, #00DFD8);
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    transition: linear 300ms;
+    cursor: pointer;
+  }
+  .btn:hover{
+    opacity: .8;
+    transition: linear 300ms;
+  }
+  
+  textarea { height: 150px; resize: none; }
+  label { color: #999; }
+  p { color: #888; }
+
+  /*--- sections ---*/
+   .hmsection1, .ctsection1 {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     height: auto;
+     gap: 1em;
+     padding: 2em;
+   }
+   .hmsection1 { align-items: center; }
+   .ctsection1 { align-content: center; max-width: 1148px; margin: 0 auto; }
+   .hmsection1__text { max-width: 400px; margin-right: auto; padding: 2em; }
+   .hmsection1__text p { color: #888; }
+   .hmsection1__map { height: 100vh; }
+   .hmsection1__map { grid-column: span 2; }
+   .ctsection1__form { max-width: 600px; }
+   .ctsection1__text img { margin-top: 1em; }
+
+  /*--- map ---*/
+  #map {
+    height: 100%;
+  }
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto;
+    padding: 0;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 1em;
+    text-overflow: ellipsis;
+    width: 15em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    left: 0 !important;
+    top: 5em !important;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  
+  #target {
+    width: 345px;
+  }
+
+  /*--- form ---*/
+  #form{ 
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 2em;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    
+  }
+  
+  .field input, textarea {
+    display: block;
+    width: 100%;
+    padding: 0.9em;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #00000000;
+    }
+
+  @media screen and (min-width: 768px){
+    .hmsection1, .ctsection1 { height: 100vh; padding: 0;}
+    .hmsection1__text { margin: 0 auto; }
+    .hmsection1{ 
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .ctsection1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

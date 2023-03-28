@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Publissoft map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="hmsection1">
+      <div class="hmsection1__text">
+        <img src="./img/Symbol_Publi.png" alt="logo publissoft" width="100"/>
+        <h1>Publissoft Map</h1>
+        <p>Selecciona las ciudades las cuales se le trabajaran a su cliente,
+          dando click en cada una de ellas.
+        </p>
+        <a class="btn" href="/cities.html">Enviar →</a>
+      </div>
+      <div class="hmsection1__map">
+          <input
+          id="pac-input"
+          class="controls"
+          type="text"
+          placeholder="Search Box"
+          />
+          <div id="map"></div>
+      </div>
+    </div>
+    
+   
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+      <script src="/js/script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8-GVIaSiFceeP9qmTdHvvVfQXD0pMc0A&callback=initMap&libraries=places, geometry&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>

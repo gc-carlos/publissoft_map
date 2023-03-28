@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send cities</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+    <div class="ctsection1">   
+        <div class="ctsection1__text">
+            <a href="/">Atras</a>
+            <h1>Ciudades a trabajar</h1>
+            <p>
+            Las ciudades seleccionadas seran enviadas al correo 
+            'seo@publissoft.com' para ser trabajadas por el equipo correspondiente.
+            </p>
+              <img src="/img/ilustration_contact_publissoft.svg" alt="ilustration maps" width="300"/>
+
+        </div>
+        <div class="ctsection1__form">
+            <form id="form">
+                <div class="field">
+                  <label for="from_name">Sitio web</label>
+                  <div class="input__container">
+                    <input type="text" name="website" id="website">
+                  </div>
+                </div>
+                <div class="field">
+                    <label for="reply_to">Vendedor</label>
+                    <div class="input__container">
+                      <input type="text" name="vendedor" id="vendedor">
+                    </div>
+                </div>
+                <div class="field">
+                  <label for="message">Mensaje</label>
+                  <textarea name="message" id="message"></textarea>
+        
+                </div>
+                <input type="submit" id="button" value="Enviar →" class="btn" >
+              </form>
+    </div>
+   
+    </div>
+    
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('rMj7scaioTqiFaSXf')
+      </script>
+</body>
+<footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/readLocalStorage.js"></script>
+</footer>
+</html>
